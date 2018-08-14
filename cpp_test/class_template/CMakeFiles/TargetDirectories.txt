@@ -1,1 +1,0 @@
-/home/rzy/work/test_play/play_exercise/cpp_test/class_template/CMakeFiles/main.dir
