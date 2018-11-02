@@ -55,8 +55,8 @@ int main(int argc, char *argv[])
 		return -1;
 	}
 
-	int flags = fcntl(com_fd, F_GETFL, 0);
-	fcntl(com_fd, F_SETFL, flags | O_NONBLOCK);
+	// int flags = fcntl(com_fd, F_GETFL, 0);
+	// fcntl(com_fd, F_SETFL, flags | O_NONBLOCK);
 
 	while (1)
 	{
