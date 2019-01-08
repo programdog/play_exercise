@@ -12,11 +12,11 @@ int main(int argc, char **argv)
 	char user_port_name[16] = {0};
 	uint32_t user_baudrate = DEAUFLT_BAUDRATE;
 
-	while ((opt = getopt(argc, argv, "b:p:")) != EOF)
+	while ((opt = getopt(argc, argv, "s:p:")) != EOF)
 	{
 		switch (opt)
 		{
-			case 'b':
+			case 's':
 				user_baudrate = (uint32_t)atoi(optarg);
 			break;
 
