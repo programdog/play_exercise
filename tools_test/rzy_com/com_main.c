@@ -4,7 +4,7 @@
  * @Function :
  * @return   [com tool]
  */
-#include "rzy_main.h"
+#include "com_main.h"
 
 extern char user_port_name[16];
 extern uint32_t user_baudrate;

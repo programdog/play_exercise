@@ -1,7 +1,7 @@
 #ifndef RZY_MAIN_H_
 #define RZY_MAIN_H_
 
-#include "rzy_com.h"
+#include "com_function.h"
 
 int main(int argc, char **argv);
 

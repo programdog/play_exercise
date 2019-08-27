@@ -2,6 +2,7 @@
 #define VARIABLE_CARE_H_
 
 #define DEAUFLT_BAUDRATE 57600
+#define RECEIVE_BUF 1000
 
 typedef struct B_baudrate_table_t
 {

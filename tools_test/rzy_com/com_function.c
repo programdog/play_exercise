@@ -1,4 +1,4 @@
-#include "rzy_com.h"
+#include "com_function.h"
 #include "variable_core.h"
 
 /*user data*/
@@ -80,19 +80,19 @@ int send_user_input()
 
 int show_port_output()
 {
-	char read_buf[100] = {0};
+	uint8_t read_buf[RECEIVE_BUF] = {0};
 	int read_num = 0;
 	while (1)
 	{
-		usleep(100*1000);
-		read_num = read(user_fd, read_buf, 100);
-		for (uint8_t i = 0; i < read_num; i++)
+		usleep(10 * 1000);
+		read_num = read(user_fd, read_buf, RECEIVE_BUF);
+		for (int i = 0; i < read_num; i++)
 		{
-			printf("%02x ", (uint8_t)read_buf[i]);
+			printf("%02x ", read_buf[i]);
 		}
 		if (read_num > 0)
 		{
-			printf("\r\n");
+			printf("\n");
 		}
 	}
 	return 0;
